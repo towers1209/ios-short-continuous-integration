@@ -2,11 +2,13 @@
 //  RomanNumeralCalculatorTests.swift
 //  RomanNumeralCalculatorTests
 //
-//  Created by Jarrod Parkes on 11/29/16.
-//  Copyright © 2016 buddybuild. All rights reserved.
+//  Created by Loreto E. Torres on 1/20/17.
+//  Copyright © 2017 buddybuild. All rights reserved.
 //
 
 import XCTest
+@testable import RomanNumeralCalculator // This a must for all the XCTAssert functions to work
+// "@testable import ..." This gives the testToRoman() access to the internal functions of the app bundle
 
 class RomanNumeralCalculatorTests: XCTestCase {
     
@@ -20,9 +22,17 @@ class RomanNumeralCalculatorTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testToRoman() {
+        XCTAssertEqual(toRoman(1), "I")
+        XCTAssertEqual(toRoman(2), "II")
+        XCTAssertEqual(toRoman(3), "III")
+        XCTAssertEqual(toRoman(4), "IV")
+        XCTAssertEqual(toRoman(5), "V")
+        XCTAssertEqual(toRoman(6), "VI")
+        XCTAssertEqual(toRoman(8), "VIII")
+        XCTAssertEqual(toRoman(90), "XC")
+        XCTAssertEqual(toRoman(1955), "MCMLV")
+        XCTAssertEqual(toRoman(2017), "MMXVII")
     }
     
     func testPerformanceExample() {

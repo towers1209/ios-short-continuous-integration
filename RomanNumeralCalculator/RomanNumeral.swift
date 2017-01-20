@@ -28,8 +28,8 @@ func toRoman(_ number: Int) -> String {
 
     for (index, romanChar) in romanValues.enumerated() {
         
-        let arabicValue = arabicValues[index]
-        let div = startingValue / arabicValue
+        let arabicValue = arabicValues[index] // LET NOTE: start with the arabic value of the leftmost roman value
+        let div = startingValue / arabicValue // LET NOTE: get the whole number part of the arabic value
 
         if div > 0 {
             for _ in 0..<div {

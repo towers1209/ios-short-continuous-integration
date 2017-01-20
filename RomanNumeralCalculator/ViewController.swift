@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     // MARK: Properties
     
     var total = 0
-    var signOfNextOperation = 1
+    var signOfNextOperation = 1 // LET 2017-01-20 Fr 1630 TBD: What is this for?
 
     // MARK: Outlets
     
