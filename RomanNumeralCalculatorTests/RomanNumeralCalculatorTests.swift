@@ -31,7 +31,7 @@ class RomanNumeralCalculatorTests: XCTestCase {
         XCTAssertEqual(toRoman(6), "VI")
         XCTAssertEqual(toRoman(8), "VIII")
         XCTAssertEqual(toRoman(90), "XC")
-        XCTAssertEqual(toRoman(1955), "MCMLV")
+        XCTAssertEqual(toRoman(1955), "MCM LV")
         XCTAssertEqual(toRoman(2017), "MMXVII")
     }
     
